@@ -1,0 +1,11 @@
+<div class="container-fluid">
+    <div class="card-deck text-center d-inline-block" *ngFor="let author of authors">
+        <div class="card">
+            <div class="card-body">
+            <h4>{{author.name}}</h4>
+            <button class="btn btn-primary" [routerLink]="['edit', author._id]">Edit</button>
+            <button class="btn btn-danger" (click)="onDelete(author._id)">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>

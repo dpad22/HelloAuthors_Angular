@@ -1,0 +1,16 @@
+<div class="container">
+    <form class="border edit-product">
+        <h4>Add Favorite Author</h4>
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" [(ngModel)]="addAuthor.name" class="form-control" id="name">
+        </div>
+
+        <div class="form-group clearfix">
+            <button class="btn btn-danger float-right" (click)="onSubmit()">Add Author</button>
+            <button class="btn btn-primary float-right">Cancel</button>
+        </div>
+    </form>
+</div>
+
